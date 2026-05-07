@@ -16,12 +16,7 @@ const CheckoutForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const STRIPE_PAYMENT_LINK = ""; // TODO: INSERER LE NOUVEAU LIEN STRIPE A 847$
-    
-    if (!STRIPE_PAYMENT_LINK) {
-      alert("ATTENTION : Veuillez insérer le nouveau lien Stripe à 847$ dans src/components/CheckoutForm.jsx (ligne 19) avant d'accepter les paiements.");
-      return;
-    }
+    const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/3cI7sM8JK9Wd3vv8iL2Fa0U";
 
     // Optionnel: Envoyer vers Zapier/Webhook ici avant de rediriger
     // fetch("VOTRE_WEBHOOK_ZAPIER", { method: "POST", body: JSON.stringify(formData) });

@@ -77,7 +77,7 @@ const Guarantees = () => {
             GARANTIE #2: CRÉDIT SUR IMPLÉMENTATION
           </h3>
           <p style={{ fontSize: "14px", lineHeight: "1.6" }}>
-            Tu décides de continuer avec nous pour implémenter l'optimisation de ton CRM ? Le 847$ est crédité à 100% sur l'intégration. Tu n'as aucune obligation de travailler avec nous pour la suite, mais c'est l'occasion parfaite de valider le potentiel de ton CRM sans risque.
+            Tu décides de continuer avec nous pour l'intégration de ton CRM ? Le montant de l'audit est crédité à 100% sur le projet d'intégration. Tu n'as aucune obligation de travailler avec nous pour la suite, mais c'est l'occasion parfaite de partir sur de bonnes bases sans risque.
           </p>
         </div>
       </div>

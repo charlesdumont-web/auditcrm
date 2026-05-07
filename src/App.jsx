@@ -4,7 +4,7 @@ import logo from "./assets/synchro-logo-final.png";
 import ProgressBar from "./components/ProgressBar";
 import Deliverables from "./components/Deliverables";
 import Guarantees from "./components/Guarantees";
-import CheckoutForm from "./components/CheckoutForm";
+import { ArrowRight } from "lucide-react";
 
 function App() {
   return (
@@ -43,101 +43,72 @@ function App() {
               marginBottom: "16px",
             }}
           >
-            Audit CRM par l'IA
+            Audit CRM
           </h1>
           <p style={{ fontSize: "20px", color: "var(--text-secondary)" }}>
-            Analyse complète de votre CRM et de ses opportunités d'automatisation
+            On analyse ton entreprise pour te recommander le bon CRM et en faire l'intégration
           </p>
         </header>
 
-        {/* Main Layout Grid */}
-        <div className="main-grid">
-          {/* Left Column (Content) */}
-          <div
-            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
-          >
-            <div className="card">
-              <h2
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "800",
-                  marginBottom: "24px",
-                }}
-              >
-                VOICI EXACTEMENT CE QUE TU OBTIENS:
-              </h2>
-              <Deliverables />
-            </div>
-
-            <div className="card">
-              <h2
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "800",
-                  marginBottom: "24px",
-                }}
-              >
-                GARANTIES — ZÉRO RISQUE:
-              </h2>
-              <Guarantees />
-            </div>
-          </div>
-
-          {/* Right Column (Checkout/Form) */}
-          <div
-            className="card"
-            style={{
-              position: "sticky",
-              top: "24px",
-              boxShadow: "var(--shadow-xl)",
-            }}
-          >
+        {/* Single Column Content */}
+        <div style={{ maxWidth: "720px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
+          <div className="card">
             <h2
               style={{
-                fontSize: "20px",
+                fontSize: "16px",
                 fontWeight: "800",
-                marginBottom: "12px",
+                marginBottom: "24px",
               }}
             >
-              JE VEUX OBTENIR MON AUDIT CRM
+              VOICI EXACTEMENT CE QUE TU OBTIENS:
             </h2>
-            <p
+            <Deliverables />
+          </div>
+
+          <div className="card">
+            <h2
               style={{
-                fontSize: "14px",
+                fontSize: "16px",
+                fontWeight: "800",
                 marginBottom: "24px",
-                color: "var(--text-secondary)",
               }}
             >
-              Obtenez l'analyse complète de votre CRM et un plan d'automatisation sur mesure pour seulement
-            </p>
-            <div
+              GARANTIES — ZÉRO RISQUE:
+            </h2>
+            <Guarantees />
+          </div>
+
+          {/* CTA Button */}
+          <div style={{ textAlign: "center", marginTop: "16px" }}>
+            <a
+              href="/offre"
               style={{
-                display: "flex",
+                display: "inline-flex",
                 alignItems: "center",
-                gap: "12px",
-                marginBottom: "24px",
+                gap: "10px",
+                background: "var(--primary-accent)",
+                color: "white",
+                padding: "18px 40px",
+                borderRadius: "8px",
+                fontSize: "16px",
+                fontWeight: "700",
+                textDecoration: "none",
+                boxShadow: "var(--shadow-md)",
+                transition: "all 0.2s ease",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = "var(--primary-accent-hover)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "var(--shadow-xl)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = "var(--primary-accent)";
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "var(--shadow-md)";
               }}
             >
-              <span
-                style={{
-                  fontSize: "32px",
-                  fontWeight: "800",
-                  color: "var(--primary-accent)",
-                }}
-              >
-                847${" "}
-                <span
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "normal",
-                    color: "var(--text-secondary)",
-                  }}
-                >
-                  +tx
-                </span>
-              </span>
-            </div>
-            <CheckoutForm />
+              Voir l'offre et réserver mon audit <ArrowRight size={20} />
+            </a>
           </div>
         </div>
 

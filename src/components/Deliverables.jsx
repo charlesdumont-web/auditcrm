@@ -25,24 +25,24 @@ const Deliverables = () => {
               letterSpacing: "0.5px",
             }}
           >
-            LIVRABLE 1: ANALYSE COMPLÈTE DE VOTRE CRM
+            LIVRABLE 1: ANALYSE DE TES BESOINS D'AFFAIRES
           </h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "12px", color: "var(--text-secondary)" }}>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span><strong>Rencontres stratégiques</strong> avec nos ingénieurs IA.</span>
+              <span><strong>Rencontres stratégiques</strong> avec nos ingénieurs pour comprendre ton entreprise.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span><strong>Analyse approfondie</strong> de votre pipeline, vos contacts et vos automatisations actuelles.</span>
+              <span><strong>Cartographie complète</strong> de tes processus de vente, de suivi client et de prospection.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span>Cartographie des <strong>opportunités d'automatisation par l'IA</strong> dans votre CRM.</span>
+              <span>Identification des <strong>pertes de revenus</strong> causées par l'absence d'un CRM structuré.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span>Identification des <strong>fuites de revenus</strong> et des suivis manqués.</span>
+              <span>Évaluation de tes outils actuels et de leurs <strong>limites</strong>.</span>
             </div>
           </div>
         </div>
@@ -77,24 +77,24 @@ const Deliverables = () => {
               letterSpacing: "0.5px",
             }}
           >
-            LIVRABLE 2: PLAN D'OPTIMISATION CRM + IA
+            LIVRABLE 2: RECOMMANDATION CRM + PLAN D'INTÉGRATION
           </h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "12px", color: "var(--text-secondary)" }}>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span>Un rapport ciblé sur l'<strong>optimisation de votre processus de vente</strong>.</span>
+              <span><strong>Recommandation du CRM idéal</strong> pour ton modèle d'affaires et ton budget.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span><strong>Architecture technique</strong> proposée pour intégrer l'IA à votre CRM.</span>
+              <span><strong>Comparatif détaillé</strong> des options avec avantages, inconvénients et coûts.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span>Mise en évidence des <strong>gains de revenus et de temps</strong> potentiels.</span>
+              <span>Plan d'intégration clé en main avec <strong>étapes concrètes</strong> de déploiement.</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "14px" }}>
               <CheckCircle2 size={16} color="var(--primary-accent)" style={{ marginTop: "3px", flexShrink: 0 }} />
-              <span>Roadmap claire de déploiement et <strong>ROI anticipé</strong>.</span>
+              <span>Estimation du <strong>ROI anticipé</strong> et des gains de temps attendus.</span>
             </div>
           </div>
         </div>

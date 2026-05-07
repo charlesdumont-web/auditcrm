@@ -19,7 +19,7 @@ const SuccessPage = () => {
             Félicitations ! Ton paiement est confirmé.
           </h1>
           <p style={{ fontSize: "18px", color: "var(--text-secondary)", marginBottom: "40px", maxWidth: "600px", margin: "0 auto 40px auto" }}>
-            Bienvenue dans l'Audit CRM par l'IA. Ton équipe et toi êtes sur le point de transformer votre gestion de la relation client et de maximiser vos revenus.
+            Bienvenue dans l'Audit CRM. Ton équipe et toi êtes sur le point de transformer votre gestion de la relation client et de maximiser vos revenus.
           </p>
 
           <div style={{ backgroundColor: "var(--primary-accent-light)", padding: "32px", borderRadius: "12px", border: "1px solid rgba(0, 85, 255, 0.2)", marginBottom: "40px", textAlign: "left" }}>
