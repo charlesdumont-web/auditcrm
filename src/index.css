@@ -1,0 +1,114 @@
+:root {
+  /* Synchro IA - Modern Tech Agency Theme */
+  --bg-main: #ffffff;
+  --bg-subtle: #f3f4f6; /* Lighter modern grey for the background */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+
+  --primary-accent: #0055FF; /* Synchro Blue */
+  --primary-accent-hover: #0044CC;
+  --primary-accent-light: #F0F5FF;
+
+  --secondary-accent: #1f2937; /* Dark slate */
+  --secondary-accent-light: #f9fafb;
+
+  --border-color: #e5e7eb;
+
+  /* Smoother, modern floating shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: "Outfit", "Inter", system-ui, sans-serif;
+
+  --card-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-subtle);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utility */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+/* Layout Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Overriding App Grid for Cards */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modern Card Style */
+.card {
+  background: var(--bg-main);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-lg);
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 32px;
+}
+
+/* Form Styles */
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.2s;
+  box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 3px var(--primary-accent-light);
+}
+
+@media (max-width: 768px) {
+  .name-grid {
+    grid-template-columns: 1fr;
+  }
+}
